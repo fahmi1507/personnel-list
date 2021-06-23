@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => {
     paginationBtn: {
       justifyContent: "center",
       display: "flex",
-      margin: 10,
+      paddingTop: 10,
     },
 
     upper: {
