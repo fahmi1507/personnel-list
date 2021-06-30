@@ -66,7 +66,7 @@ export default function PersonnelList() {
   const classes = useStyles();
   const [personnel, setPersonnel] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [color, setColor] = useState("#40e0d0");
+  const [color] = useState("#40e0d0");
 
   useEffect(() => {
     if (notRefresh()) {

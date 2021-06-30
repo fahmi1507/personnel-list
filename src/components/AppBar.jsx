@@ -7,18 +7,26 @@ import IconButton from "@material-ui/core/IconButton";
 import Drawer from "./Drawer";
 import { AccountCircle } from "@material-ui/icons";
 
-const useStyles = makeStyles({
-  appBar: {
-    marginBottom: 10,
-  },
+const useStyles = makeStyles((theme) => {
+  return {
+    appBar: {
+      marginBottom: 10,
+    },
 
-  title: {
-    flexGrow: 1,
-  },
+    title: {
+      flexGrow: 1,
+    },
 
-  subtitle: {
-    color: "#40e0d0",
-  },
+    subtitle: {
+      color: "#40e0d0",
+    },
+
+    greetings: {
+      [theme.breakpoints.down("sm")]: {
+        display: "none",
+      },
+    },
+  };
 });
 
 export default function Header() {
@@ -32,7 +40,7 @@ export default function Header() {
           <Typography variant="h6" color="secondary" className={classes.title}>
             GADJIAN
           </Typography>
-          <Typography>
+          <Typography className={classes.greetings}>
             Hello, <span className={classes.subtitle}>Gadjian User! </span>{" "}
           </Typography>
           <IconButton color="inherit">
