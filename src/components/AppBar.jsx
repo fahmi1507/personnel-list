@@ -38,10 +38,10 @@ export default function Header() {
         <Toolbar>
           <Drawer />
           <Typography variant="h6" color="secondary" className={classes.title}>
-            GADJIAN
+            LOGO
           </Typography>
           <Typography className={classes.greetings}>
-            Hello, <span className={classes.subtitle}>Gadjian User! </span>{" "}
+            Hello, <span className={classes.subtitle}>Mario! </span>{" "}
           </Typography>
           <IconButton color="inherit">
             <AccountCircle />
